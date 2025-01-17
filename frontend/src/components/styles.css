@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Light gray background */
+  color: #333; /* Dark gray text */
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-img {
+  height: 30px; /* Adjust the logo height */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between the logo and any adjacent text */
+}
+
+/* Main Content Section */
+main {
+  padding: 30px;
+  margin-top: 80px; /* Space for the fixed header */
+  text-align: center; /* Center content */
+  flex-grow: 1; /* Allows the main content to grow and push the footer down */
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #222; /* Slightly darker text for headings */
+}
+
+h1 {
+  font-size: 3rem; /* Larger text for h1 */
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh; /* Adjust the height of the section */
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 4rem; /* Adjust size for responsiveness */
+  font-weight: 700;
+  color: #222;
+}
+
+.welcome-section p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-top: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Card and Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+  display: grid;
+  gap: 20px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+form button {
+  align-self: start;
+}
+
+
+/* Buy Now Button */
+.buy-now-button {
+  background-color: #141619; /* Initial background color */
+  color: white;
+  border: none;
+  border-radius: 100px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding */
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.buy-now-button:hover {
+  background-color: #292f35; /* Darker shade on hover */
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  background-color: transparent; /* Transparent background initially */
+  color: #141619; /* Text color */
+  border: 2px solid #141619; /* Light border */
+  border-radius: 100px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.add-to-cart-button:hover {
+  background-color: #141619; /* Background fills on hover */
+  color: white; /* Text color changes on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .welcome-section h1 {
+    font-size: 3rem; /* Smaller heading on mobile */
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+}

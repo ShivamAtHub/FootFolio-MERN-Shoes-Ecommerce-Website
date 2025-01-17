@@ -1,0 +1,19 @@
+button {
+    background-color: #141619; /* Dark background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #292f35; /* Darker background on hover */
+  }
+  
+  button:focus {
+    outline: none;
+  }

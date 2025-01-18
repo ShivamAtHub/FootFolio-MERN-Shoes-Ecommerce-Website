@@ -54,12 +54,13 @@ To run and set up FootFolio, ensure you have the following installed:
 - **A web browser** – To view and interact with the application locally.
 
 ## Installation
-1. Clone the Repository (Replace `YourUsername` with your GitHub username)
+1. **Clone the Repository (Replace `YourUsername` with your GitHub username)**
 ``````````````
 git clone https://github.com/YourUsername/FootFolio---A-Shoes-Ecommerce-Website.git  
 cd FootFolio---A-Shoes-Ecommerce-Website  
 ``````````````
-2. Set up the Backend
+2. **Set up the Backend**
+
    - Navigate to the backend folder:
 ``````````````
 cd backend  
@@ -74,7 +75,8 @@ MONGO_URI=<your_mongodb_connection_string>
 PORT=5000  
 ``````````````
 
-3. Set up the Frontend
+3. **Set up the Frontend**
+
    - Navigate to the frontend folder:
 ``````````````
 cd frontend 
@@ -84,7 +86,8 @@ cd frontend
 npm install 
 ``````````````
   
-4. Running and Accessing the Website
+4. **Running and Accessing the Website**
+
    - Navigate to `backend` directory and run the following command:
 ``````````````
 node server.js 
@@ -92,6 +95,19 @@ node server.js
    - Open any web browser and visit(make sure it matches your MongoDB port, in my case it is `5000`):
 ``````````````
 http://localhost:5000
+``````````````
+---
+
+### **Alternate Way (For Proper Styling)**:
+
+   - Navigate to `backend` directory and run:
+``````````````
+node server.js 
+``````````````
+   - Navigate to `frontend` directory and use `npm start` to run the website at the frontend level:
+``````````````
+cd frontend
+npm start
 ``````````````
 
 ## How_To_Use
